@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Home</title>
+</head>
+<body>
+  <h1>Hello! How're you feeling today?</h1>
+  <form action="/" method="POST">
+    <label for="user_input"> Speak to Ella:</label>
+    <input type="text" id="user_input" name="user_input">
+    <button type="submit">Submit</button>
+
+  </form>
+
+  {% if process_output %}  <p><h3>INPUT:</h3> {{ user_input }}</p>
+  <h3>OUTPUT:</h3>
+    <pre>{{ process_output }}</pre>
+  {% endif %}
+</body>
+</html>
