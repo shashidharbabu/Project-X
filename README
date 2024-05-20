@@ -2,20 +2,23 @@ Name: PROJECT X
 
 Mental Health App with Virtual Assistant - Project Brief
 
-*Problem Statement:*
-
-Many people struggle with mental health challenges like anxiety and depression.  There's a need for accessible and user-friendly tools to provide initial support, coping mechanisms, and resources. 
+Problem Statement: Many people struggle with mental health challenges like anxiety and depression.  There's a need for accessible and 
+user-friendly tools to provide initial support, coping mechanisms, and resources. 
 
 *Vision:*
 
-To create a web app that offers a safe and supportive space for individuals experiencing mental health concerns.  The app will leverage a virtual assistant and integrate with existing resources to empower users on their journey towards mental well-being.
+To create a web app that offers a safe and supportive space for individuals experiencing mental health concerns.  The app will leverage 
+a virtual assistant and integrate with existing resources to empower users on their journey towards mental well-being.
 
 **Core Functionalities:**
 
 * **Phase 1:**
-    01. Text-based interaction with a virtual assistant named Ella. Ella will utilize the Gemini API to understand user queries and provide empathetic, active listening support.
-    02. Pre-defined emotional state prompts: Users can select prompts like "I'm feeling anxious" or "I'm feeling hopeless" to initiate conversations with Ella.
-    03. Support Resources: Ella will offer coping mechanisms, psychoeducation summaries, and recommendations for self-help materials and support groups.
+    01. Text-based interaction with a virtual assistant named Ella. Ella will utilize the Gemini API to understand user queries and 
+        provide empathetic, active listening support.
+    02. Pre-defined emotional state prompts: Users can select prompts like "I'm feeling anxious" or "I'm feeling hopeless" to initiate 
+        conversations with Ella.
+    03. Support Resources: Ella will offer coping mechanisms, psychoeducation summaries, and recommendations for self-help materials 
+        and support groups.
     04. Content Management System (CMS): Manage content delivered by Ella, like coping mechanism instructions and psychoeducation summaries.
 * **Phase 2 (Potential):**
     * **Mood Tracking:** Allow users to track their moods over time and identify patterns.
@@ -24,9 +27,10 @@ To create a web app that offers a safe and supportive space for individuals expe
     * **Expand Prompt Library:** Add a wider range of emotional states to the pre-defined prompts.
 * **Phase 3 (Potential):**
     * **Audio-based interaction with Ella:** Integrate text-to-speech functionality for users who prefer audio responses.
-    * **Community Features:** Explore anonymous chat forums or group support features within the app (with safety protocols in place).
-    * **Customizable Prompts:** Allow users to create their own emotional state prompts.
-    * **Integration with Mental Health Professionals:** Explore potential partnerships with mental health professionals for in-app consultations or referrals.
+    * **Community Features:** Explore the app's anonymous chat forums or group support features (with safety protocols in place).
+    * **Customizable Prompts:** Allow users to create their emotional state prompts.
+    * **Integration with Mental Health Professionals:** Explore potential partnerships with mental health professionals for in-app 
+        consultations or referrals.
 
 **Technical Considerations:**
 
@@ -40,10 +44,10 @@ To create a web app that offers a safe and supportive space for individuals expe
 
 * Prototype development for Phase 1 functionalities. 
 * User testing and feedback gathering.
-* Development of Phase 2 and 3 features based on user feedback and project milestones.
+* Phase 2 and 3 feature development based on user feedback and project milestones.
 
 **Additional Considerations:**
 
 * Data privacy and security compliance.
 * Accessibility features for users with disabilities.
-* Long-term sustainability plan for the app (e.g., freemium model with premium features).
+* Long-term sustainability plan for the app (e.g., the freemium model with premium features).
