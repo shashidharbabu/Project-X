@@ -7,8 +7,11 @@ class Generator:
     
     def __init__(self):
         self.conversation_history = []
+        
+    def get_conversation_history(self):
+        return "\n".join(self.conversation_history)
 
-    def gemini_process(user_input):
+    def gemini_process(self, user_input):
         generation_config = {
             
             "temperature": 0.9,
@@ -40,24 +43,29 @@ class Generator:
         02. Remove your name infront of the responses
 
         **Keep track of the conversation history to provide personalized and relevant responses.** 
+        **Conversation History:**
+        {self.get_conversation_history()}  # Function to retrieve conversation history (optional)
 
+        Respond to: {user_input}
         """
 
         response = model.generate_content(prompt)
+        self.conversation_history.append(f"You: {user_input}\nElla: {response.text}")
+
         # self.conversation_history.append(f"Ella: {response.text}")
 
         print(response.text)
-        
         return response.text
     
 
         
-# generator = Generator()
+generator = Generator() 
 
-# # Start the conversation loop
-# while True:
-#     user_input = input("You: ")
-#     if user_input.lower() == "quit":
-#         break
-#     generator.gemini_process(user_input)
+# Start the conversation loop
+while True:
+    user_input = input("You: ")
+    if user_input.lower() == "quit":
+        break
+    generator.gemini_process(user_input)
+
         
