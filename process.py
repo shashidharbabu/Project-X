@@ -1,5 +1,6 @@
 import google.generativeai as genai
 import os
+from gtts import gTTS
 genai.configure(api_key = os.getenv("GOOGLE_API_KEY"))
 
 
@@ -23,7 +24,7 @@ class Generator:
         
         #conversations: gemini-pro || images : gemini-pro-vision
         
-        model = genai.GenerativeModel("gemini-pro", generation_config = generation_config)
+        model = genai.GenerativeModel("gemini-1.5-pro", generation_config = generation_config)
         prompt = f"""
         You are Ella, a compassionate and empathetic virtual assistant specializing in mental health support.
         Your primary goal is to provide a safe and understanding space for users to discuss their feelings and concerns.  
@@ -54,18 +55,21 @@ class Generator:
 
         # self.conversation_history.append(f"Ella: {response.text}")
 
+        
+        #Converting text to speech 
+        speech = gTTS(text=response.text, lang='en', slow= False)  # Change 'en' for other languages
+        speech.save("static/ella_response.mp3")
+
         print(response.text)
         return response.text
     
+# generator = Generator() 
 
-        
-generator = Generator() 
-
-# Start the conversation loop
-while True:
-    user_input = input("You: ")
-    if user_input.lower() == "quit":
-        break
-    generator.gemini_process(user_input)
+# # Start the conversation loop
+# while True:
+#     user_input = input("You: ")
+#     if user_input.lower() == "quit":
+#         break
+#     generator.gemini_process(user_input)
 
         
