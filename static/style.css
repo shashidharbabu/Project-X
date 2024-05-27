@@ -1,0 +1,101 @@
+body {
+    font-family: 'Raleway', sans-serif;  /* Use a modern font like Raleway */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    background-color: #f7f7f7;  /* Light gray background */
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    width: 50%;
+    max-width: 500px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;  /* Darker text for headings */
+}
+
+p {
+    color: #888;
+    margin-bottom: 20px;
+}
+
+.chat-history {
+    margin-bottom: 20px;
+    overflow-y: auto;
+    max-height: 300px;
+    background-color: #f2f2f2;  /* Lighter gray background for chat history */
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.chat-message {
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    display: flex;  /* Message container as a flexbox */
+}
+
+.user-message,
+.ella-message {
+    flex: 1;  /* Messages take up most of the space */
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
+}
+
+.user-message {
+    background-color: #e0f2ff;  /* Light blue for user messages */
+    color: #333;
+}
+
+.ella-message {
+    background-color: #f7f5fa;  /* Light pink for Ella messages */
+    color: #666;
+}
+
+.input-field {
+    margin-bottom: 10px;
+}
+
+.input-field input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+.suggestion-prompts {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.suggestion-prompts span {
+    padding: 5px 10px;
+    border-radius: 3px;
+    margin: 5px;
+    cursor: pointer;
+    background-color: #e0f2ff;  /* Lighter blue for suggestion prompts */
+    color: #333;
+}
+
+.suggestion-prompts span:hover {
+    background-color: #d0e6ff;  /* Lighter blue on hover */
+}
+
+.error-message {
+    background-color: #f9f2f2;
+    color: #a83333;
+}
