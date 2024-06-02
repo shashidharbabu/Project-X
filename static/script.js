@@ -34,7 +34,6 @@ chatForm.addEventListener('submit', function(event) {
 
     // Access the audio file path from the data object
     const audioFilePath = data.audio_file;
-
     // Play the audio using HTML5 Audio API (assuming browser support)
     const audioElement = new Audio(audioFilePath);
     audioElement.play();
@@ -49,9 +48,17 @@ chatForm.addEventListener('submit', function(event) {
 // Handle suggestion prompts (assuming they trigger sending the prompt as user input)
 const suggestionPrompts = document.querySelectorAll('.suggestion-prompts span');
 
+
 suggestionPrompts.forEach(prompt => {
   prompt.addEventListener('click', function() {
+    console.log("Adding Event Listener"); // Added for debugging
+    
+    const promptText = prompt.textContent.trim();
+    console.log("Prompt Text:", promptText); // Added for debugging
+
     userInputField.value = prompt.textContent.trim();
+    console.log("User Input Field Value:", userInputField.value); // Added for debugging
+
     chatForm.submit();
   });
 });
