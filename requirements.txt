@@ -3,3 +3,5 @@ streamlit
 flask
 langchain
 langchain-google-genai
+transformers
+requests

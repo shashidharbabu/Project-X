@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Therapist Search</title>
+</head>
+<body>
+  <h1>Find a Therapist</h1>
+  <form action="/therapist_search" method="post">
+    <label for="location">Location (City, State, or Zip Code):</label><br>
+    <input type="text" id="location" name="location" required><br><br>
+    <label for="insurance">Insurance Accepted (Optional):</label><br>
+    <input type="text" id="insurance" name="insurance"><br><br>
+    <label for="specialties">Specialties (e.g., Anxiety, Depression):</label><br>
+    <input type="text" id="specialties" name="specialties"><br><br>
+    <button type="submit">Search Therapists</button>
+  </form>
+</body>
+</html>
