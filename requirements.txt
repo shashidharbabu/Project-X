@@ -1,3 +1,7 @@
 google-generativeai
 streamlit
 flask
+langchain
+langchain-google-genai
+transformers
+requests
